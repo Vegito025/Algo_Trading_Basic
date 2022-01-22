@@ -43,7 +43,7 @@ differance = abs(float(yesterday_data_closing_price) - float(day_before_yesterda
 diff_percent = (differance/float(yesterday_data_closing_price)) * 100
 
 
-if diff_percent > 3:
+if diff_percent > 5:
 
     API_PARAMETER = {
         "q": stock_name,
